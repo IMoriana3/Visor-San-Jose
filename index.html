@@ -1,12 +1,24 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>San José · Editor puntos–tracker</title>
+<meta name="theme-color" content="#0B0F14">
+<title>Visor San José — Editor puntos–tracker</title>
+<link rel="icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header class="app-bar">
+  <a class="back" href="https://imoriana3.github.io/proyectos/">← Panel</a>
+  <h1>Visor San José</h1>
+  <span class="sub">Editor puntos → tracker · San José (Aragón)</span>
+  <span class="client">Acciona</span>
+  <span class="brand">Factiun</span>
+</header>
 <div id="app">
   <aside id="panel">
     <h1><span class="pin">◢</span> SAN JOSÉ · Editor</h1>
@@ -48,7 +60,7 @@
         <div><span class="m">●</span> asignado</div>
         <div><span class="m">■</span> sin asignar</div>
         <div><span class="m">◆</span> motor (NCU)</div>
-        <div><span class="m" style="color:var(--accent)">○</span> editado</div>
+        <div><span class="m" style="color:var(--edit)">○</span> editado</div>
       </div>
     </div>
 
@@ -93,6 +105,7 @@
   </aside>
   <main id="plotwrap"><div id="plot"></div><div id="flash"></div></main>
 </div>
+<footer class="app-foot">Factiun · Visor San José — <a href="https://imoriana3.github.io/proyectos/">Panel de Proyectos</a></footer>
 <script src="js/plotly.min.js"></script>
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>
